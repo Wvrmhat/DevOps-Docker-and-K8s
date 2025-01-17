@@ -7,20 +7,25 @@
 docker container run --publish 80:80 --name nginx --detach nginx
 docker container run -p 8080:80 --name httpd -d httpd
 ```
-// passes in a random password when running mysql 
+passes in a random password when running mysql 
+```
 docker container run -p 3306:3306 --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=yes -d mysql 
+```
+> check if they are running with <ins>docker ps</ins> or with <ins>docker container ls</ins> 
 
-// check if they are running 
-docker ps or with docker container ls 
-
-// check container logs on mysql to find random password created at startup
+check container logs on mysql to find random password created at startup
+```
 docker container logs mysql
-// to specifically get password 
+```
+to specifically get password 
+```
 docker logs mysql | grep "GENERATED ROOT PASSWORD"
+```
 
 ## cleaning up the containers
+```
 docker container ls 
 docker container stop <names of containers>
 docker container rm <names of containers> 
-
-docker image ls - gives a list of images
+```
+> docker image ls - gives a list of images
