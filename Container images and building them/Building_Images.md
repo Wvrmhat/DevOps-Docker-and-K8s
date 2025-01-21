@@ -6,7 +6,7 @@
 vim Dockerfile (access the docker file)
 exit (ctrl + z to exit)
 
-``
+```
 
 ## Building and Editing an image
 
@@ -16,6 +16,7 @@ code . (opens file in vs code to edit instead of vim)
 docker image build -t customnginx .  
 
 ```
+
 - Added an additional EXPOSE port with 8080. This allows the container to receive packets on that port
 - **docker image ls** to view the created image 
 - also note that rebuilding images are faster as they have been cached 
