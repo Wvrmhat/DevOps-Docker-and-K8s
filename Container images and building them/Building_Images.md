@@ -23,7 +23,7 @@ docker image build -t customnginx .
 
 It's important to make sure the order of the lines are are the same, things that change the least at top, keeping things that change the most at the bottom of the file.
 
---
+---
 
 ## Extending official images 
 
