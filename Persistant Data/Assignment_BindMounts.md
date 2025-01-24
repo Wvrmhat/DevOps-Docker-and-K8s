@@ -15,4 +15,4 @@ Run the following, then in vs code edit the _post file
 docker run -p 80:4000 -v "$(pwd)":/site bretfisher/jekyll-serve
 ```
 
-!(PersistantData/Screenshot2025-01-24224607.png)
+![Screenshot of the changes made on the website](Screenshot2025-01-24224607.png)
