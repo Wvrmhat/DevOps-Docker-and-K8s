@@ -14,3 +14,10 @@
 - Tip: Drupal setup will assume the database runs on localhost, which is incorrect. You'll need to change it under Advanced settings to the name of the Docker service you gave to postgres
 - Use Docker Hub documentation to figure out the right environment and volume settings
 - Extra Credit: Use volumes to store Drupal unique data
+
+---
+
+## My Results
+
+The following is a screenshot after running the image in my docker compose file, it is the front page of the default drupal site.
+
