@@ -58,10 +58,10 @@ In newer versions of Drupal, they've begun to prefer MySQL or MariaDB over Postg
 
 ---
 
+## My Results
+
 > When using mariadb, I had to add extra env variables so that a user is made as the database is create. Otherwise an error displays on the drupal database config page.
 
-## Results
-
-The following is screenshots which shows the two services in use with the bootrap installed along with drupal from the dockerfile.:
+The following is screenshots which shows the two services in use with the bootrap installed along with drupal from the dockerfile.
 
 
