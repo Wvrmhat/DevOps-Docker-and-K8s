@@ -66,11 +66,11 @@ The following is screenshots which shows the two services in use with the bootra
 
 - Bootrap theme available from docker file
 
-[Screenshot of the theme](https://github.com/Wvrmhat/DevOps-Docker-and-K8s/blob/34de556174594bcb8f906e23c5970dd5d788bd78/Docker%20Compose/compose-assignment-2/assignment2_bootstrap.png)
+![Screenshot of the theme](https://github.com/Wvrmhat/DevOps-Docker-and-K8s/blob/34de556174594bcb8f906e23c5970dd5d788bd78/Docker%20Compose/compose-assignment-2/assignment2_bootstrap.png)
 
 - Front web page after installing the theme
 
-[Screenshot of the front page](
+![Screenshot of the front page](
 https://github.com/Wvrmhat/DevOps-Docker-and-K8s/blob/34de556174594bcb8f906e23c5970dd5d788bd78/Docker%20Compose/compose-assignment-2/frontpage.png)
 
 
