@@ -21,3 +21,5 @@
 
 The following is a screenshot after running the image in my docker compose file, it is the front page of the default drupal site.
 
+![screenshot of drupal page](https://github.com/Wvrmhat/DevOps-Docker-and-K8s/blob/0ba37f0042eec2f05842a703ef20d1708725c657/Docker%20Compose/compose_assignment_1.png)
+
