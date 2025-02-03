@@ -1,0 +1,68 @@
+# This example file from a previous lecture where we ran drupal in docker compose
+# in this Assignment, change it to work with the default drupal image, and change
+# postgres to use a Swarm secret. More info in the README.md file.
+
+# services:
+
+#   drupal:
+#     image: custom-drupal
+#     build: .
+#     ports:
+#       - "8080:80"
+#     volumes:
+#       - drupal-modules:/var/www/html/modules
+#       - drupal-profiles:/var/www/html/profiles       
+#       - drupal-sites:/var/www/html/sites      
+#       - drupal-themes:/var/www/html/themes
+ 
+#   postgres:
+#     image: postgres:14
+#     environment:
+#       - POSTGRES_PASSWORD=mypasswd
+#     volumes:
+#       - drupal-data:/var/lib/postgresql/data
+
+# volumes:
+#   drupal-data:
+#   drupal-modules:
+#   drupal-profiles:
+#   drupal-sites:
+#   drupal-themes:
+
+version: "3.9"
+
+services:
+  drupal-service: 
+    image: drupal:9
+    ports:
+      - "8080:80"
+
+    volumes:
+      - drupal-modules:/var/www/html/modules
+      - drupal-profiles:/var/www/html/profiles
+      - drupal-themes:/var/www/html/themes
+      - drupal-sites:/var/www/html/sites
+
+  mariadb-service:
+    image: mariadb:10.6
+
+    environment:
+      - MARIADB_USER=drupal
+      - MARIADB_ROOT_PASSWORD_FILE=/run/secrets/mariadb-pw 
+      - MARIADB_PASSWORD_FILE=/run/secrets/mariadb-pw 
+      - MARIADB_DATABASE=mariadb
+    secrets:
+      - mariadb-pw 
+    volumes:
+      - drupal-data:/var/lib/mysql/data
+
+volumes:
+  drupal-data:
+  drupal-modules:
+  drupal-profiles:
+  drupal-themes:
+  drupal-sites: 
+
+secrets:
+  mariadb-pw:
+   external: true  
