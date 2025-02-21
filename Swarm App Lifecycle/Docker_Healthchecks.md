@@ -105,3 +105,12 @@ healthcheck:
 	retries: 3
 	start_period: 1m  # Version 3.4 minimum 
 ```
+
+
+
+```
+docker container run --name p1 -d postgres
+docker container run --name p2 -d --health-cmd="pg_isready
+docker container inspect p2 		(there is an extra healthcheck variable in p2)
+docker service create --name p1 postgres			
+```
