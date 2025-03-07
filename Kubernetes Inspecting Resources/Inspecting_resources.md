@@ -96,7 +96,7 @@ kubectl logs -l app=<pod name>
 ```
 
 > [!Note]
-> [System logs](https://kubernetes.io/docs/concepts/cluster-administration/system-logs/) \n
-> [logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/) \n
-> [Debug running logs](https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/) \n
+> [System logs](https://kubernetes.io/docs/concepts/cluster-administration/system-logs/) <br/> 
+> [logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/) <br/>
+> [Debug running logs](https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/) 
 
