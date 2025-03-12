@@ -75,7 +75,7 @@ curl localhost:8888
 ```
 - The LoadBalancer service from docker will then publish on port 8888, which allows K8s to be on a specific port outside from the default set.
 
-![Running NodePort and LoadBalancer service](creating_clusterip_service.png)
+![Running NodePort and LoadBalancer service](creating_np_and_lb_service.png)
 
 ---
 
