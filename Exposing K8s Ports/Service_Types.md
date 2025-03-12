@@ -7,11 +7,11 @@ Creating pods in Kubernetes don't automatically get a DNS name for external conn
 - CoreDNS is our DNS server to resolve the names of services, picking IP, port and how it gets traffic.
 <details>
 <summary>Types:</summary> 
-  - ClusterIP (default) 
-  - NodePort      (when something outside the cluster needs to talk to the services, has a high port assigned)
-  - LoadBalancer  (allows for incoming traffic from a provider)
-  - ExternalName  (for migration)
-  - also used for controlling the dns inside kubernetes, and changing the endpoint  
+  + ClusterIP (default) 
+  + NodePort      (when something outside the cluster needs to talk to the services, has a high port assigned)
+  + LoadBalancer  (allows for incoming traffic from a provider)
+  + ExternalName  (for migration)
+  + also used for controlling the dns inside kubernetes, and changing the endpoint  
 </details>
 
 ---
