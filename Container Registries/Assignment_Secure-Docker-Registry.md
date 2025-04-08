@@ -1,6 +1,6 @@
 # Assignment: Secure Docker Registry with TLS and Auth
 
-To run a registry securely it is importan to configure it to serve HTTPS traffic, this can be done by securing it with
+To run a registry securely it is important to configure it to serve HTTPS traffic, this can be done by securing it with
 a self-signed SSL certificate.
 
 ## Generating the SSL certificate
